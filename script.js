@@ -213,7 +213,29 @@
     });
   }
 
-  /* ---------- 9. Footer year ---------- */
+  /* ---------- 9. Desktop-view site previews ---------- */
+  // iframes are laid out at a fixed 1280 x 800 desktop canvas, then scaled
+  // to the card width so sites show their real desktop layout.
+  var desktopWraps = document.querySelectorAll('.site-desktop');
+
+  function fitDesktopFrames() {
+    desktopWraps.forEach(function (wrap) {
+      var frame = wrap.querySelector('iframe');
+      var width = wrap.clientWidth;
+      if (!frame || !width) return;
+      var scale = width / 1280;
+      frame.style.transform = 'scale(' + scale + ')';
+      wrap.style.height = Math.round(800 * scale) + 'px';
+    });
+  }
+
+  if (desktopWraps.length) {
+    fitDesktopFrames();
+    window.addEventListener('resize', fitDesktopFrames, { passive: true });
+    window.addEventListener('load', fitDesktopFrames);
+  }
+
+  /* ---------- 10. Footer year ---------- */
   var yearEl = document.getElementById('year');
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
