@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Areeba Shah - Full-Stack Web Developer</title>
+  <meta name="description" content="Portfolio of Areeba Shah, a full-stack web developer specializing in custom websites with WordPress, Shopify, PHP, custom plugins and Elementor." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/areeba.png" />
+  <script>
+    // Set theme before paint to avoid a flash of the wrong theme.
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', saved);
+        } else {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="#home" class="logo">Areeba<span class="logo-dot">.</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="btn btn-ghost nav-cta">Hire Me</a>
+        <button class="theme-toggle btn btn-ghost nav-cta" id="themeToggle" aria-label="Toggle light and dark mode">
+          <span class="icon-sun" aria-hidden="true">☀️</span>
+          <span class="icon-moon" aria-hidden="true">🌙</span>
+        </button>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <p class="hero-eyebrow">👋 Hey, I'm</p>
+          <h1 class="hero-name">Areeba Shah</h1>
+          <h2 class="hero-role">I build <span class="typed" id="typed"></span><span class="caret" aria-hidden="true"></span></h2>
+          <p class="hero-text">
+            Full-stack web developer who turns wild ideas into fast, gorgeous websites.
+            From custom WordPress &amp; Shopify builds to PHP magic, I make pixels pop
+            and code that clicks.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>2+</strong><span>Years Experience</span>
+            </div>
+            <div class="stat">
+              <strong>15+</strong><span>Websites Delivered</span>
+            </div>
+            <div class="stat">
+              <strong>6+</strong><span>Client Projects</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="photo-frame">
+            <img src="assets/areeba.png" alt="Portrait of Areeba Shah" class="photo" />
+            <div class="photo-glow" aria-hidden="true"></div>
+            <div class="badge badge-top">
+              <span class="badge-icon">🛠️</span>
+              <div><strong>Web Developer</strong><small>Full-Stack</small></div>
+            </div>
+            <div class="badge badge-bottom">
+              <span class="badge-icon">✨</span>
+              <div><strong>Responsive Design</strong><small>UI / UX Focused</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll to about section">
+        <span class="mouse"><span class="wheel"></span></span>
+      </a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Code, coffee &amp; killer websites ☕</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <div class="about-photo-wrap">
+              <img src="assets/areeba-full.jpg" alt="Areeba Shah" class="about-photo" loading="lazy" />
+              <span class="about-exp">2+ yrs<br /><small>building</small></span>
+            </div>
+          </div>
+          <div class="about-text reveal">
+            <p>
+              Full-stack developer with real, hands-on experience designing and shipping
+              responsive websites with <strong>WordPress</strong>, <strong>Shopify</strong>,
+              <strong>PHP</strong>, <strong>custom plugins</strong> and <strong>Elementor</strong>.
+              I love the whole journey, from blank canvas to launch day.
+            </p>
+            <p>
+              My thing? Clean code, end-to-end development, QA audits and design workflows
+              that keep sites fast, accessible and a breeze to maintain. No broken layouts,
+              no slow load times, just websites that work as good as they look.
+            </p>
+            <ul class="facts">
+              <li><span class="fact-label">Email</span><a href="mailto:areebashah673@gmail.com">areebashah673@gmail.com</a></li>
+              <li><span class="fact-label">Phone</span><a href="tel:+923002250366">+92 300 2250366</a></li>
+              <li><span class="fact-label">Location</span>Karachi, Pakistan</li>
+              <li><span class="fact-label">LinkedIn</span><a href="https://www.linkedin.com/" target="_blank" rel="noopener">Areeba Shah ↗</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-dark">Let's Work Together</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Technical Skills</span>
+          <h2 class="section-title">My toolbox of web wizardry 🪄</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-emoji">🎨</span>
+              <h3>Frontend Development</h3>
+            </div>
+            <div class="chips">
+              <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Elementor</span><span class="chip">Custom Web</span><span class="chip">Custom Plugins</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-emoji">⚙️</span>
+              <h3>Backend Development</h3>
+            </div>
+            <div class="chips">
+              <span class="chip">PHP</span><span class="chip">OOP</span><span class="chip">CRUD Operations</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-emoji">🗄️</span>
+              <h3>Databases</h3>
+            </div>
+            <div class="chips">
+              <span class="chip">SQL</span><span class="chip">MySQL</span><span class="chip">Data Modeling</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-emoji">🚀</span>
+              <h3>CMS &amp; Tools</h3>
+            </div>
+            <div class="chips">
+              <span class="chip">WordPress</span><span class="chip">Shopify</span><span class="chip">Framer</span><span class="chip">Git</span><span class="chip">GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Experience</span>
+          <h2 class="section-title">The journey so far, one launch at a time 🚀</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"><span class="dot"></span></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3>Frontend Developer</h3>
+                <span class="timeline-org">Solcoders</span>
+                <span class="timeline-date">Feb 2026 - Present</span>
+              </div>
+              <ul class="timeline-points">
+                <li>Building and customizing WordPress &amp; Shopify sites for real client projects.</li>
+                <li>Shipping responsive, cross-browser designs with a serious eye for UI/UX.</li>
+                <li>Teaming up on QA audits to squeeze out better performance and smoother flows.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"><span class="dot"></span></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3>Web Developer</h3>
+                <span class="timeline-org">Startitup Global</span>
+                <span class="timeline-date">Feb 2025 - Feb 2026</span>
+              </div>
+              <ul class="timeline-points">
+                <li>Built WordPress &amp; Shopify sites, both custom and theme-based.</li>
+                <li>Crafted and customized plugins tailored to exactly what clients needed.</li>
+                <li>Ran QA audits that leveled up performance, UX and overall functionality.</li>
+              </ul>
+              <div class="chips chips-sm">
+                <span class="chip chip-line">precimmo.com</span><span class="chip chip-line">petroretailstrategy.com</span><span class="chip chip-line">itdl.co.uk</span><span class="chip chip-line">fatravels.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"><span class="dot"></span></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3>Frontend Developer</h3>
+                <span class="timeline-org">Mitsol.Tech</span>
+                <span class="timeline-date">June 2024 - Feb 2025</span>
+              </div>
+              <ul class="timeline-points">
+                <li>Built and fine-tuned custom WordPress themes and Shopify stores.</li>
+                <li>Leveled up UI/UX with responsive design and performance tuning.</li>
+                <li>Wrote Audit &amp; Quality reports that made sites sharper and faster.</li>
+              </ul>
+              <div class="chips chips-sm">
+                <span class="chip chip-line">rememberwhenwe.com</span><span class="chip chip-line">Serv.energy</span><span class="chip chip-line">Mitsol.Tech</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"><span class="dot"></span></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3>Frontend Development Intern</h3>
+                <span class="timeline-org">Mitsol.Tech</span>
+                <span class="timeline-date">Apr 2024 - June 2024</span>
+              </div>
+              <ul class="timeline-points">
+                <li>Hands-on work on live projects in WordPress, Shopify and Framer.</li>
+                <li>Helped polish UI, report on QA and boost performance across the board.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"><span class="dot"></span></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3>Full-Stack Development Intern</h3>
+                <span class="timeline-org">Code Alpha (Remote)</span>
+                <span class="timeline-date">May 2024 - Aug 2024</span>
+              </div>
+              <ul class="timeline-points">
+                <li>Built a Library Management System with full CRUD in PHP.</li>
+                <li>Created a PHP-powered Music Player system from scratch.</li>
+                <li>Wired up efficient backend logic and smooth system workflows.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"><span class="dot"></span></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3>Virtual Assistant / Web Designer</h3>
+                <span class="timeline-org">SAI Coach Foundation (Remote)</span>
+                <span class="timeline-date">Mar 2024 - Feb 2025</span>
+              </div>
+              <ul class="timeline-points">
+                <li>Designed fresh, responsive websites for multiple clients.</li>
+                <li>Shipped a 9-page automated business site with smart integrations.</li>
+                <li>Kept client workflows and digital operations running like clockwork.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Projects</span>
+          <h2 class="section-title">Stuff I'm proud to show off ✨</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-icon">🏨</div>
+            <h3>Hotel Management System</h3>
+            <p>Room booking, staff control, billing and online reservations all in one slick system built with <strong>PHP</strong>.</p>
+            <div class="chips chips-sm"><span class="chip chip-line">PHP</span><span class="chip chip-line">SQL</span></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-icon">🩺</div>
+            <h3>Clinic Management System</h3>
+            <p>Patient &amp; doctor dashboards with e-commerce built in, powered by <strong>PHP</strong> and <strong>custom plugins</strong>.</p>
+            <div class="chips chips-sm"><span class="chip chip-line">PHP</span><span class="chip chip-line">Custom Plugins</span></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-icon">💸</div>
+            <h3>Staff Payment Tracker</h3>
+            <p>Employee data and payments handled with clean <strong>OOP</strong> in PHP. Payroll tracking that just works.</p>
+            <div class="chips chips-sm"><span class="chip chip-line">PHP</span><span class="chip chip-line">OOP</span></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-icon">📚</div>
+            <h3>Library Management System</h3>
+            <p>Full CRUD library system in <strong>PHP</strong> managing books, members and loans with an admin flow that feels effortless.</p>
+            <div class="chips chips-sm"><span class="chip chip-line">PHP</span><span class="chip chip-line">MySQL</span></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-icon">🎵</div>
+            <h3>Music Player</h3>
+            <p>A <strong>PHP</strong>-powered music player with smart backend logic, playlists and buttery-smooth workflows.</p>
+            <div class="chips chips-sm"><span class="chip chip-line">PHP</span><span class="chip chip-line">JavaScript</span></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-icon">🌐</div>
+            <h3>Client Websites</h3>
+            <p>Custom WordPress &amp; Shopify builds for real clients like precimmo.com, itdl.co.uk, fatravels.com and beyond.</p>
+            <div class="chips chips-sm"><span class="chip chip-line">WordPress</span><span class="chip chip-line">Shopify</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION & CERTIFICATIONS ===== -->
+    <section class="section education" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Education &amp; Achievements</span>
+          <h2 class="section-title">Always learning, always leveling up 📈</h2>
+        </div>
+        <div class="edu-grid">
+          <div class="edu-card reveal">
+            <span class="edu-emoji">🎓</span>
+            <h3>Software Engineering Certification</h3>
+            <p class="edu-org">Aptech, Karachi</p>
+            <span class="edu-date">2024</span>
+          </div>
+          <div class="edu-card reveal">
+            <span class="edu-emoji">📖</span>
+            <h3>Masters in Arabic</h3>
+            <p class="edu-org">Kanz ul Madaris, Karachi</p>
+            <span class="edu-date">2023 - 2024</span>
+          </div>
+          <div class="edu-card reveal">
+            <span class="edu-emoji">🏆</span>
+            <h3>Best Semester Project</h3>
+            <p class="edu-org">Aptech, recognized for outstanding project work</p>
+            <div class="chips chips-sm"><span class="chip chip-line">Aptech Visions</span><span class="chip chip-line">Techwiz</span></div>
+          </div>
+        </div>
+        <div class="achievements reveal">
+          <h3>Key Achievements</h3>
+          <ul class="achievement-list">
+            <li>Shipped fully responsive, optimized websites that clients actually love.</li>
+            <li>Boosted site quality and performance through detailed QA audits.</li>
+            <li>Real-world experience on real client projects, with real customization.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="section-tag section-tag-light">Contact</span>
+            <h2 class="section-title section-title-light">Got an idea? Let's make it glow 🌟</h2>
+            <p class="contact-text">
+              Have a project in mind or just want to say hi? My inbox is always open,
+              and I usually reply within a day. Let's build something your competitors envy.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-ico">✉️</span>
+                <div><small>Email</small><a href="mailto:areebashah673@gmail.com">areebashah673@gmail.com</a></div>
+              </li>
+              <li>
+                <span class="contact-ico">📞</span>
+                <div><small>Phone</small><a href="tel:+923002250366">+92 300 2250366</a></div>
+              </li>
+              <li>
+                <span class="contact-ico">💼</span>
+                <div><small>LinkedIn</small><a href="https://www.linkedin.com/" target="_blank" rel="noopener">Areeba Shah ↗</a></div>
+              </li>
+              <li>
+                <span class="contact-ico">📍</span>
+                <div><small>Location</small>Karachi, Pakistan</div>
+              </li>
+            </ul>
+          </div>
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project inquiry" />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message ✈️</button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">Areeba<span class="logo-dot">.</span></a>
+      <p class="footer-copy">© <span id="year"></span> Areeba Shah. Designed &amp; built with 💗 by Areeba.</p>
+      <a href="#home" class="back-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
