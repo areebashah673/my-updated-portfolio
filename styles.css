@@ -915,105 +915,6 @@ ul { list-style: none; }
 .project-card p strong { color: var(--text); }
 
 /* ============================================================
-   EDUCATION
-   ============================================================ */
-.education { background: var(--bg); }
-
-.edu-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-bottom: 56px;
-}
-
-.edu-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 30px;
-  box-shadow: var(--shadow-sm);
-  position: relative;
-  backdrop-filter: blur(8px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-.edu-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--glow-mint);
-  border-color: rgba(34, 211, 238, 0.5);
-}
-
-.edu-emoji {
-  width: 48px; height: 48px;
-  display: grid; place-items: center;
-  font-size: 1.4rem;
-  background: var(--grad-card);
-  border: 1px solid var(--glass-border);
-  border-radius: 13px;
-  margin-bottom: 16px;
-}
-.edu-card h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; margin-bottom: 6px; }
-.edu-org { font-size: 0.92rem; color: var(--muted); margin-bottom: 14px; }
-.edu-date {
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 700;
-  background: var(--grad-mint);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border: 1px solid var(--border);
-  padding: 4px 12px;
-  border-radius: 100px;
-}
-
-.achievements {
-  background: var(--surface);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--radius-lg);
-  padding: 44px 50px;
-  position: relative;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 0.7fr 1.3fr;
-  gap: 30px;
-  align-items: center;
-  box-shadow: var(--shadow-md);
-  backdrop-filter: blur(10px);
-}
-.achievements::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--grad-card);
-  opacity: 0.6;
-  pointer-events: none;
-}
-.achievements h3 {
-  font-family: var(--font-display);
-  font-size: 1.6rem;
-  font-weight: 600;
-  background: var(--grad-main);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-}
-
-.achievement-list { display: grid; gap: 12px; position: relative; }
-.achievement-list li {
-  position: relative;
-  padding-left: 30px;
-  color: var(--text-dim);
-  font-size: 0.97rem;
-}
-.achievement-list li::before {
-  content: "★";
-  position: absolute;
-  left: 0;
-  color: var(--teal);
-}
-
-/* ============================================================
    CONTACT
    ============================================================ */
 .contact {
@@ -1160,7 +1061,6 @@ ul { list-style: none; }
   .facts { justify-items: center; }
 
   .projects-grid { grid-template-columns: repeat(2, 1fr); }
-  .achievements { grid-template-columns: 1fr; }
   .site-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -1182,7 +1082,7 @@ ul { list-style: none; }
   .nav-cta { display: inline-flex; }
   .nav-toggle { display: flex; }
 
-  .skills-grid, .edu-grid { grid-template-columns: 1fr; }
+  .skills-grid { grid-template-columns: 1fr; }
 
   .timeline-meta h3 { font-size: 1.15rem; }
   .timeline-date { margin-left: 0; }
@@ -1202,7 +1102,6 @@ ul { list-style: none; }
   .badge { padding: 8px 12px; }
   .badge-top { right: 0; top: 6%; }
   .badge-bottom { left: 0; }
-  .achievements { padding: 34px 26px; }
   .footer-inner { justify-content: center; text-align: center; }
   .about-photo { height: 440px; }
 }
